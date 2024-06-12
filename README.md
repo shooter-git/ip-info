@@ -27,7 +27,7 @@ This Python script processes a log file containing IP addresses, retrieves detai
 1. Ensure that you have a log file (`logs/threats.log`) that the script can read from.
 2. Run the script:
     ```bash
-    python ip_threat_log_processor.py
+    python ip_info.py
     ```
 3. The script will process the log file and append detailed information about each IP address to the output file (`logs/ip_scan.log`).
 
