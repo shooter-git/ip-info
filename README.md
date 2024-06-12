@@ -24,12 +24,12 @@ This Python script processes a log file containing IP addresses, retrieves detai
 
 ## Usage
 
-1. Ensure that you have a log file (`logs/threats.log`) that the script can read from.
+1. Ensure that you have a log file (`logs/ip_addresses.log`) that the script can read from.
 2. Run the script:
     ```bash
     python ip_info.py
     ```
-3. The script will process the log file and append detailed information about each IP address to the output file (`logs/ip_scan.log`).
+3. The script will process the log file and append detailed information about each IP address to the output file (`logs/ip_info.log`).
 
 ## Script Details
 
@@ -44,11 +44,11 @@ This Python script processes a log file containing IP addresses, retrieves detai
 
 ### Continuous Monitoring
 
-The script continuously monitors the log file (`logs/threats.log`) every 60 seconds for new IP addresses. If the log file does not exist, it waits until the file is created. When new IP addresses are found, it retrieves and logs their details.
+The script continuously monitors the log file (`logs/ip_addresses.log`) every 60 seconds for new IP addresses. If the log file does not exist, it waits until the file is created. When new IP addresses are found, it retrieves and logs their details.
 
 ### Example Output
 
-The output in the `logs/ip_scan.log` file will look like this:
+The output in the `logs/ip_info.log` file will look like this:
 
 IP Address : 8.8.8.8
 Hostname : dns.google
